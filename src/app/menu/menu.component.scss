@@ -1,0 +1,9 @@
+.menu{
+    display: flex;
+    align-items: center;
+    select{
+        width: 250px;
+        margin: 0 1rem;
+        max-width: 300px;
+    }
+}

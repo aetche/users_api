@@ -1,0 +1,17 @@
+<div class="container-users">
+  <div class="percent">
+      Porcentaje de personas cuyo nombre y apellido tienen mas de 12 caracteres:
+      <strong>{{percent | percent }}</strong>
+  </div>
+  <ul>
+    <li *ngFor = 'let user of users'>
+        <div class="media">
+            <img src="{{user.avatar}}" class="align-self-start mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">{{user.first_name}}  {{user.last_name}}</h5>
+              <p>N° caracteres: {{user.first_name.length+user.last_name.length}}</p>
+            </div>
+          </div>
+    </li>
+  </ul>
+</div>
